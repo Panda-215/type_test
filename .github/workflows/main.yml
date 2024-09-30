@@ -4,5 +4,8 @@ jobs:
   build:
      runs-on: ubuntu-latest
      steps:
-     - name: test
-       run: echo "test"
+     - name: Checkout code
+       run: actions/checkout@v2
+
+       - name: print html
+       run: cat hellome.html
